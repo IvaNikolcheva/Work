@@ -1,0 +1,12 @@
+﻿@{
+    var username = InputType.Text.ToString();
+    bool rememberMe = false;
+}
+
+<form asp-action="SaveUser" method="post">
+    <h2>Вход</h2>
+    <h4>Потребителско име:</h4>
+    <input type="text" @username/>
+    <input type="checkbox" asp-for="@rememberMe"/>Запомни ме
+    <button type="submit"></button>
+</form>

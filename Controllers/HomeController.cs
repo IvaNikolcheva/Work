@@ -28,7 +28,6 @@ namespace LastTimeViewed.Controllers
         [HttpPost]
         public IActionResult ShowLastLogIn(string logIn)
         {
-            
             return RedirectToAction("Index");
         }
 
